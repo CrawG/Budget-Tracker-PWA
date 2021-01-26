@@ -6,23 +6,39 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "lite-server": "lite-server"
+    "lite-server": "lite-server",
+    "webpack": "webpack",
+    "preinstall": "npx npm-force-resolutions",
+    "dev": "webpack-dev-server --hot --inline",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "git+https://github.com/CrawG/Budget-Tracker-PWA"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/CrawG/Budget-Tracker-PWA/issues"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://github.com/CrawG/Budget-Tracker-PWA#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "minimist": "^1.2.5",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }
